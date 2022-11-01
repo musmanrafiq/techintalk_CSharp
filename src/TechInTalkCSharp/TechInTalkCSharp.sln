@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyConsoleLibrary", "MyConsoleLibrary\MyConsoleLibrary.csproj", "{6CB37B73-D878-4093-AB7B-32015B4D1386}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Variables_Constant_ReadOnly", "03-Variables_Constant_ReadOnly", "{6A258C8B-62DA-40BB-85E9-3DDDEC843500}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_VCR", "03-Variables_Constant_ReadOnly\03_VCR\03_VCR.csproj", "{8F5AD62D-3825-45AD-859A-92531F7F5887}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +25,16 @@ Global
 		{6CB37B73-D878-4093-AB7B-32015B4D1386}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CB37B73-D878-4093-AB7B-32015B4D1386}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CB37B73-D878-4093-AB7B-32015B4D1386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F5AD62D-3825-45AD-859A-92531F7F5887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F5AD62D-3825-45AD-859A-92531F7F5887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F5AD62D-3825-45AD-859A-92531F7F5887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F5AD62D-3825-45AD-859A-92531F7F5887}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8F5AD62D-3825-45AD-859A-92531F7F5887} = {6A258C8B-62DA-40BB-85E9-3DDDEC843500}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9239E59-720F-4EB7-AB8E-A5A1D277D0AB}
