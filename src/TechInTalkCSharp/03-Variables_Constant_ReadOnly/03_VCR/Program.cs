@@ -2,8 +2,7 @@
 {
     internal class Program
     {
-        const int age = 10;
-
+        static readonly int age = 10;
 
         public Program()
         {
