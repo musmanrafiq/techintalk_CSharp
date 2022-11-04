@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Variables_float_vs_doubl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_FDD", "04-Variables_float_double_decimal\04_FDD\04_FDD.csproj", "{9C80495D-C3FE-42C7-B2B2-7B1837E88774}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-Take_User_input_ConsoleApp", "05-Take_User_input_ConsoleApp", "{4C748011-5B87-4541-BF14-E334FFCA005B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeUserInput", "05-Take_User_input_ConsoleApp\TakeUserInput\TakeUserInput.csproj", "{9DF18A39-CB50-4590-B0E1-B9BD1B92E710}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,10 @@ Global
 		{9C80495D-C3FE-42C7-B2B2-7B1837E88774}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C80495D-C3FE-42C7-B2B2-7B1837E88774}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C80495D-C3FE-42C7-B2B2-7B1837E88774}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DF18A39-CB50-4590-B0E1-B9BD1B92E710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF18A39-CB50-4590-B0E1-B9BD1B92E710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DF18A39-CB50-4590-B0E1-B9BD1B92E710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DF18A39-CB50-4590-B0E1-B9BD1B92E710}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +52,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{8F5AD62D-3825-45AD-859A-92531F7F5887} = {6A258C8B-62DA-40BB-85E9-3DDDEC843500}
 		{9C80495D-C3FE-42C7-B2B2-7B1837E88774} = {76526969-FD2B-43E0-B353-E26C6EBCFDE9}
+		{9DF18A39-CB50-4590-B0E1-B9BD1B92E710} = {4C748011-5B87-4541-BF14-E334FFCA005B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9239E59-720F-4EB7-AB8E-A5A1D277D0AB}

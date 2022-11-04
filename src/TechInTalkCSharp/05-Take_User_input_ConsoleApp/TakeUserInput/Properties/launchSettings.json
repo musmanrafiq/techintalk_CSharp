@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TakeUserInput": {
+      "commandName": "Project",
+      "commandLineArgs": "Pakistan\r\nZinda\r\nBaad"
+    }
+  }
+}
