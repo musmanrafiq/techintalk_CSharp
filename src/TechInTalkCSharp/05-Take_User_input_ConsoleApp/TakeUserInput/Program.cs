@@ -9,9 +9,10 @@
     {
         static void Main(string[] args)
         {
+            
             // Console.WriteLine($"Hello, World! {args[2]}");
 
-            Console.WriteLine("Please enter you name");
+            Console.WriteLine("Please enter you name"+ m.PI);
 
             string userInput = Console.ReadLine();
 
