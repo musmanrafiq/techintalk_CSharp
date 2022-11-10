@@ -21,7 +21,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TakeUserInput", "05-Take_Us
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06- Methods_introduction", "06- Methods_introduction", "{3A213784-7E11-4DB9-A512-0C6DDD2DE726}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methods_introduction", "06- Methods_introduction\Methods_introduction\Methods_introduction.csproj", "{0DCD4D36-28DE-4575-B93F-6CE3A17C4C3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Methods_introduction", "06- Methods_introduction\Methods_introduction\Methods_introduction.csproj", "{0DCD4D36-28DE-4575-B93F-6CE3A17C4C3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Access_Modifiers", "02-Access_Modifiers", "{A87594B1-7D93-4D49-AE75-9FFEC5D0BC67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07-Types_Of_Methods", "07-Types_Of_Methods", "{3DFF7B17-7421-4F1C-B8FB-5D4959C6E8CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypesOfMethods", "07-Types_Of_Methods\TypesOfMethods\TypesOfMethods.csproj", "{22F6D71F-3B8F-48AC-BFAD-E46616CF9F5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,15 +59,22 @@ Global
 		{0DCD4D36-28DE-4575-B93F-6CE3A17C4C3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DCD4D36-28DE-4575-B93F-6CE3A17C4C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DCD4D36-28DE-4575-B93F-6CE3A17C4C3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22F6D71F-3B8F-48AC-BFAD-E46616CF9F5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22F6D71F-3B8F-48AC-BFAD-E46616CF9F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22F6D71F-3B8F-48AC-BFAD-E46616CF9F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22F6D71F-3B8F-48AC-BFAD-E46616CF9F5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{DB6A9882-5C13-464D-930B-668E5D2F57C1} = {A87594B1-7D93-4D49-AE75-9FFEC5D0BC67}
+		{6CB37B73-D878-4093-AB7B-32015B4D1386} = {A87594B1-7D93-4D49-AE75-9FFEC5D0BC67}
 		{8F5AD62D-3825-45AD-859A-92531F7F5887} = {6A258C8B-62DA-40BB-85E9-3DDDEC843500}
 		{9C80495D-C3FE-42C7-B2B2-7B1837E88774} = {76526969-FD2B-43E0-B353-E26C6EBCFDE9}
 		{9DF18A39-CB50-4590-B0E1-B9BD1B92E710} = {4C748011-5B87-4541-BF14-E334FFCA005B}
 		{0DCD4D36-28DE-4575-B93F-6CE3A17C4C3F} = {3A213784-7E11-4DB9-A512-0C6DDD2DE726}
+		{22F6D71F-3B8F-48AC-BFAD-E46616CF9F5C} = {3DFF7B17-7421-4F1C-B8FB-5D4959C6E8CE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9239E59-720F-4EB7-AB8E-A5A1D277D0AB}
