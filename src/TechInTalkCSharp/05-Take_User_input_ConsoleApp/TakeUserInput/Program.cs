@@ -12,11 +12,9 @@
             
             // Console.WriteLine($"Hello, World! {args[2]}");
 
-            Console.WriteLine("Please enter you name"+ m.PI);
+            Console.WriteLine("Please enter you name");
 
-            string userInput = Console.ReadLine();
-
-            
+            string userInput = Console.ReadLine();            
 
             Console.WriteLine($"Welcome to c# tutorial series {userInput}");
             
