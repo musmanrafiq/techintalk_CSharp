@@ -31,11 +31,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypesOfMethods", "07-Types_
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08-Debug_a_program", "08-Debug_a_program", "{6994D754-B1F4-4485-BE10-82BF133EF29C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debug_A_Program", "08-Debug_A_Program\Debug_A_Program\Debug_A_Program.csproj", "{4B58BF37-4EA0-4C3B-B2DD-E12AD45D5FFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Debug_A_Program", "08-Debug_A_Program\Debug_A_Program\Debug_A_Program.csproj", "{4B58BF37-4EA0-4C3B-B2DD-E12AD45D5FFD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09-Extension_Methods", "09-Extension_Methods", "{E073AE9A-1888-409D-AE42-CC10EB5B98C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "09-Extension_Methods\ExtensionMethods\ExtensionMethods.csproj", "{80EB970B-D9B5-4AD5-AE55-7DC5FAF54F24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionMethods", "09-Extension_Methods\ExtensionMethods\ExtensionMethods.csproj", "{80EB970B-D9B5-4AD5-AE55-7DC5FAF54F24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10-Partial_Methods", "10-Partial_Methods", "{F82794D3-DE57-493C-AA58-1BAB20C46E94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartialMethods", "10-Partial_Methods\PartialMethods\PartialMethods.csproj", "{CDFB6861-0C7B-48C5-AB7B-A03F1498F9F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11-OOP-Encapsulation", "11-OOP-Encapsulation", "{083F85C8-F164-46C3-8188-E11B29F5CB4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-Ecapsulation", "11-Ecapsulation\11-Ecapsulation\11-Ecapsulation.csproj", "{C733BFF8-A8DE-4B27-980D-129C845DDB8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +87,14 @@ Global
 		{80EB970B-D9B5-4AD5-AE55-7DC5FAF54F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80EB970B-D9B5-4AD5-AE55-7DC5FAF54F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80EB970B-D9B5-4AD5-AE55-7DC5FAF54F24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDFB6861-0C7B-48C5-AB7B-A03F1498F9F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDFB6861-0C7B-48C5-AB7B-A03F1498F9F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDFB6861-0C7B-48C5-AB7B-A03F1498F9F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDFB6861-0C7B-48C5-AB7B-A03F1498F9F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C733BFF8-A8DE-4B27-980D-129C845DDB8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C733BFF8-A8DE-4B27-980D-129C845DDB8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C733BFF8-A8DE-4B27-980D-129C845DDB8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C733BFF8-A8DE-4B27-980D-129C845DDB8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +109,8 @@ Global
 		{22F6D71F-3B8F-48AC-BFAD-E46616CF9F5C} = {3DFF7B17-7421-4F1C-B8FB-5D4959C6E8CE}
 		{4B58BF37-4EA0-4C3B-B2DD-E12AD45D5FFD} = {6994D754-B1F4-4485-BE10-82BF133EF29C}
 		{80EB970B-D9B5-4AD5-AE55-7DC5FAF54F24} = {E073AE9A-1888-409D-AE42-CC10EB5B98C2}
+		{CDFB6861-0C7B-48C5-AB7B-A03F1498F9F7} = {F82794D3-DE57-493C-AA58-1BAB20C46E94}
+		{C733BFF8-A8DE-4B27-980D-129C845DDB8D} = {083F85C8-F164-46C3-8188-E11B29F5CB4E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9239E59-720F-4EB7-AB8E-A5A1D277D0AB}
