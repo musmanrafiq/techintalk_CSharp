@@ -63,6 +63,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "15-Enums", "15-Enums", "{33
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15-Enums", "15-Emums\15-Enums\15-Enums.csproj", "{50AD3907-7C95-41D5-9A55-FD37927404F3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "16- CSharp 11 features", "16- CSharp 11 features", "{DA2139BA-6781-4B62-A935-628CC43EBBB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp11Features", "15-CSharp11Features\CSharp11Features\CSharp11Features.csproj", "{1FE1B28E-BC1F-4772-98D6-F49E7E1A33A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -133,6 +137,10 @@ Global
 		{50AD3907-7C95-41D5-9A55-FD37927404F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50AD3907-7C95-41D5-9A55-FD37927404F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50AD3907-7C95-41D5-9A55-FD37927404F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FE1B28E-BC1F-4772-98D6-F49E7E1A33A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FE1B28E-BC1F-4772-98D6-F49E7E1A33A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FE1B28E-BC1F-4772-98D6-F49E7E1A33A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FE1B28E-BC1F-4772-98D6-F49E7E1A33A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -154,6 +162,7 @@ Global
 		{43B61909-236A-427C-9D0B-32A67D26A19F} = {ECF31E34-A886-402F-A385-0D161B42BFE5}
 		{49DC8DB1-C4C3-44CD-B8F3-0964A96540A6} = {AD8ADC35-5FD4-47FC-89BD-92D706D09B5C}
 		{50AD3907-7C95-41D5-9A55-FD37927404F3} = {33265EDD-2A16-4D8A-B537-5CC2A42B1FE6}
+		{1FE1B28E-BC1F-4772-98D6-F49E7E1A33A7} = {DA2139BA-6781-4B62-A935-628CC43EBBB2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9239E59-720F-4EB7-AB8E-A5A1D277D0AB}
