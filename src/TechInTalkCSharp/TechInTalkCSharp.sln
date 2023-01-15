@@ -57,15 +57,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13-Inheritance", "13-OOP_In
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "14-Pollymorphism", "14-Pollymorphism", "{AD8ADC35-5FD4-47FC-89BD-92D706D09B5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pollymorphism", "14-OOP_Pollymorphism\Pollymorphism\Pollymorphism.csproj", "{49DC8DB1-C4C3-44CD-B8F3-0964A96540A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pollymorphism", "14-OOP_Pollymorphism\Pollymorphism\Pollymorphism.csproj", "{49DC8DB1-C4C3-44CD-B8F3-0964A96540A6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "15-Enums", "15-Enums", "{33265EDD-2A16-4D8A-B537-5CC2A42B1FE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15-Enums", "15-Emums\15-Enums\15-Enums.csproj", "{50AD3907-7C95-41D5-9A55-FD37927404F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15-Enums", "15-Emums\15-Enums\15-Enums.csproj", "{50AD3907-7C95-41D5-9A55-FD37927404F3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "16- CSharp 11 features", "16- CSharp 11 features", "{DA2139BA-6781-4B62-A935-628CC43EBBB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp11Features", "15-CSharp11Features\CSharp11Features\CSharp11Features.csproj", "{1FE1B28E-BC1F-4772-98D6-F49E7E1A33A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp11Features", "15-CSharp11Features\CSharp11Features\CSharp11Features.csproj", "{1FE1B28E-BC1F-4772-98D6-F49E7E1A33A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "17-ConnectSqlServer", "17-ConnectSqlServer", "{5641A592-2ED6-4159-81C9-91A85B401BED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17ConnectToSqlServer", "17-ConnectToSqlServer\17ConnectToSqlServer\17ConnectToSqlServer.csproj", "{BBE1DDDD-EF9B-4417-8B8E-40E9A8AB3928}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +145,10 @@ Global
 		{1FE1B28E-BC1F-4772-98D6-F49E7E1A33A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FE1B28E-BC1F-4772-98D6-F49E7E1A33A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FE1B28E-BC1F-4772-98D6-F49E7E1A33A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBE1DDDD-EF9B-4417-8B8E-40E9A8AB3928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE1DDDD-EF9B-4417-8B8E-40E9A8AB3928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE1DDDD-EF9B-4417-8B8E-40E9A8AB3928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE1DDDD-EF9B-4417-8B8E-40E9A8AB3928}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -163,6 +171,7 @@ Global
 		{49DC8DB1-C4C3-44CD-B8F3-0964A96540A6} = {AD8ADC35-5FD4-47FC-89BD-92D706D09B5C}
 		{50AD3907-7C95-41D5-9A55-FD37927404F3} = {33265EDD-2A16-4D8A-B537-5CC2A42B1FE6}
 		{1FE1B28E-BC1F-4772-98D6-F49E7E1A33A7} = {DA2139BA-6781-4B62-A935-628CC43EBBB2}
+		{BBE1DDDD-EF9B-4417-8B8E-40E9A8AB3928} = {5641A592-2ED6-4159-81C9-91A85B401BED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9239E59-720F-4EB7-AB8E-A5A1D277D0AB}
