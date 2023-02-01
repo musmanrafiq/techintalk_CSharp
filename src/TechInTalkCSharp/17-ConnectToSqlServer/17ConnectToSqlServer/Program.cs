@@ -25,13 +25,20 @@ namespace _17ConnectToSqlServer
                 }
             }
             // insert operation
-            string inserUserQuery = "INSERT INTO Users (Id,Name) VALUES(@Id,@Name)";
+            string id = "1";
+            string name = "usman";
+            string inserUserQuery = "INSERT INTO Users VALUES("+ id+ ",'" + name+"')";
+            SqlCommand insertCommad = new SqlCommand(inserUserQuery, connection);
+            int recordsAdded = insertCommad.ExecuteNonQuery();
+            Console.WriteLine($"{recordsAdded} no of records added");
+            /*
+             * string inserUserQuery = "INSERT INTO Users (Id,Name) VALUES(@Id,@Name)";
             SqlCommand insertCommad = new SqlCommand(inserUserQuery, connection);
             insertCommad.Parameters.AddWithValue("@Id", 3);
             insertCommad.Parameters.AddWithValue("@Name", "Hamza");
             int recordsAdded = insertCommad.ExecuteNonQuery();
             Console.WriteLine($"{recordsAdded} no of records added");
-
+             * 
             // update operation
             string updateQuery = "UPDATE Users SET Name=@Name WHERE Id=@Id";
             SqlCommand updateCommand = new SqlCommand(updateQuery, connection);
@@ -46,7 +53,7 @@ namespace _17ConnectToSqlServer
             deleteCommand.Parameters.AddWithValue("@Id", "3");
             int recordsDeleted = deleteCommand.ExecuteNonQuery();
             Console.WriteLine($"{recordsUpdated} no of records deleted");
-
+            */
             Console.WriteLine("Program ends here.");
         }
     }
