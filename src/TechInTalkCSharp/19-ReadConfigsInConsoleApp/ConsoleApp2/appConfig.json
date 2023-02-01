@@ -1,0 +1,7 @@
+{
+  "EmailService": {
+    "Email": "abc@dd.com",
+    "Smtp": "abc.smtp.com",
+    "Password":  "$lfjgkgsflkjrflkjfg"
+  }
+}
