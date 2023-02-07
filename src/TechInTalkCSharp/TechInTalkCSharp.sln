@@ -77,7 +77,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "18WhyStringPropertyWarning"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "19-ReadConfigsInConsoleApp", "19-ReadConfigsInConsoleApp", "{1CF47173-BEFE-4A53-84FB-427588B941D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadConfigsInConsoleApp", "19-ReadConfigsInConsoleApp\ConsoleApp2\ReadConfigsInConsoleApp.csproj", "{9B06B64E-58E0-4926-84B1-6E721F76CAC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadConfigsInConsoleApp", "19-ReadConfigsInConsoleApp\ConsoleApp2\ReadConfigsInConsoleApp.csproj", "{9B06B64E-58E0-4926-84B1-6E721F76CAC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20-MethodOverloading", "20-MethodOverloading", "{6E4A6897-0F27-4E2A-8A73-FC43643159D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodOverloading", "20-MethodOverloading\MethodOverloading\MethodOverloading.csproj", "{9803C132-AF82-49AE-A268-5F5B05B6517D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +169,10 @@ Global
 		{9B06B64E-58E0-4926-84B1-6E721F76CAC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B06B64E-58E0-4926-84B1-6E721F76CAC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B06B64E-58E0-4926-84B1-6E721F76CAC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9803C132-AF82-49AE-A268-5F5B05B6517D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9803C132-AF82-49AE-A268-5F5B05B6517D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9803C132-AF82-49AE-A268-5F5B05B6517D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9803C132-AF82-49AE-A268-5F5B05B6517D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -190,6 +198,7 @@ Global
 		{BBE1DDDD-EF9B-4417-8B8E-40E9A8AB3928} = {5641A592-2ED6-4159-81C9-91A85B401BED}
 		{62EC2A50-567B-4B6B-A39C-5E1EC8936178} = {9E1A7393-C3D9-4A83-8CDD-69B14DD4F4A9}
 		{9B06B64E-58E0-4926-84B1-6E721F76CAC9} = {1CF47173-BEFE-4A53-84FB-427588B941D4}
+		{9803C132-AF82-49AE-A268-5F5B05B6517D} = {6E4A6897-0F27-4E2A-8A73-FC43643159D5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9239E59-720F-4EB7-AB8E-A5A1D277D0AB}
