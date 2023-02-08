@@ -81,7 +81,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadConfigsInConsoleApp", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20-MethodOverloading", "20-MethodOverloading", "{6E4A6897-0F27-4E2A-8A73-FC43643159D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodOverloading", "20-MethodOverloading\MethodOverloading\MethodOverloading.csproj", "{9803C132-AF82-49AE-A268-5F5B05B6517D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MethodOverloading", "20-MethodOverloading\MethodOverloading\MethodOverloading.csproj", "{9803C132-AF82-49AE-A268-5F5B05B6517D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "21-DI_ConsoleApp", "21-DI_ConsoleApp", "{4D0E3250-0193-43BF-98F7-4F0119213F49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIConsoleApp", "21-DIConsoleApp\DIConsoleApp\DIConsoleApp.csproj", "{7F43EF33-5350-489A-9AA1-5EAA195C1BD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -173,6 +177,10 @@ Global
 		{9803C132-AF82-49AE-A268-5F5B05B6517D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9803C132-AF82-49AE-A268-5F5B05B6517D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9803C132-AF82-49AE-A268-5F5B05B6517D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F43EF33-5350-489A-9AA1-5EAA195C1BD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F43EF33-5350-489A-9AA1-5EAA195C1BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F43EF33-5350-489A-9AA1-5EAA195C1BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F43EF33-5350-489A-9AA1-5EAA195C1BD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -199,6 +207,7 @@ Global
 		{62EC2A50-567B-4B6B-A39C-5E1EC8936178} = {9E1A7393-C3D9-4A83-8CDD-69B14DD4F4A9}
 		{9B06B64E-58E0-4926-84B1-6E721F76CAC9} = {1CF47173-BEFE-4A53-84FB-427588B941D4}
 		{9803C132-AF82-49AE-A268-5F5B05B6517D} = {6E4A6897-0F27-4E2A-8A73-FC43643159D5}
+		{7F43EF33-5350-489A-9AA1-5EAA195C1BD1} = {4D0E3250-0193-43BF-98F7-4F0119213F49}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9239E59-720F-4EB7-AB8E-A5A1D277D0AB}
