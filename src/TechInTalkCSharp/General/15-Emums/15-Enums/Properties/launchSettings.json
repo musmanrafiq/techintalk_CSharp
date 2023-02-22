@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "15-Enums": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:50758;http://localhost:50759"
+    }
+  }
+}
