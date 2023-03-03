@@ -12,16 +12,18 @@
             Console.WriteLine($"The salary of the person is {person.Salary}");
 
             ApplyTax(person);
+            salary = ApplyTax(salary);
 
             Console.WriteLine($"The salary of the person is {person.Salary}");
 
 
         }
 
-        public static void ApplyTax(ref int salary)
+        public static int ApplyTax(int salary)
         {
             salary = salary - (100);
             Console.WriteLine(salary);
+            return salary;
         }
         public static void ApplyTax( Person person)
         {
