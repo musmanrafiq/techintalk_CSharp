@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RefKeyword": {
+      "commandName": "Project",
+      "commandLineArgs": "test\r\none\r\ntwo"
+    }
+  }
+}

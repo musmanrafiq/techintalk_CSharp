@@ -1,10 +1,14 @@
 ﻿namespace Services
 {
-    public class Class1
+    public class SHortcuts
     {
-        public void DoIt()
+        public string name { get; set; }
+
+        public SHortcuts()
         {
-            throw new NotImplementedException();
+
         }
+
+
     }
 }

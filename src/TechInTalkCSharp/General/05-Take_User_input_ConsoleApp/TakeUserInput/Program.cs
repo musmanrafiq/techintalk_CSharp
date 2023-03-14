@@ -20,7 +20,6 @@
             
             ConsoleKeyInfo userInputChar = Console.ReadKey();
             Console.WriteLine(userInputChar.KeyChar);
-            
         }
     }
 }

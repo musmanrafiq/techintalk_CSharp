@@ -5,6 +5,7 @@
         
         static void Main(string[] args)
         {
+            Console.WriteLine(args[0]);
             int salary = 1000;
             Person person = new Person();
             person.Salary = 2000;
