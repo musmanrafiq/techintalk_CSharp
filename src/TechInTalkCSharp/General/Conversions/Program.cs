@@ -5,7 +5,6 @@
         static void Main(string[] args)
         {
             string? amount = "1000";
-            int convertedValue;
             // by using int.parse
             //int firstConversion = Int32.Parse(amount);
 
@@ -18,7 +17,11 @@
             int firstConversion = Int32.Parse(amount);
 
             // by using int.TryParse
-            bool withTryParse = int.TryParse(amount, out convertedValue);
+            bool withTryParse = Int32.TryParse(amount, out _);
+            if (withTryParse)
+            {
+
+            }
         }
     }
 }
