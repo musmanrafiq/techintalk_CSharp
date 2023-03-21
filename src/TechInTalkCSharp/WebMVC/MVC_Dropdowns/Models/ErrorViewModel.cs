@@ -1,4 +1,4 @@
-namespace MVC_Dropdowns.Models
+namespace MVC_Controls.Models
 {
     public class ErrorViewModel
     {

@@ -129,7 +129,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conversions", "General\Conv
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TypesConversions", "TypesConversions", "{CA0273A4-427D-47AC-A552-DC20508CA5CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_Dropdowns", "WebMVC\MVC_Dropdowns\MVC_Dropdowns.csproj", "{75ED8ECA-428F-4ABB-BBB8-BD943D042778}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_Controls", "WebMVC\MVC_Dropdowns\MVC_Controls.csproj", "{75ED8ECA-428F-4ABB-BBB8-BD943D042778}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

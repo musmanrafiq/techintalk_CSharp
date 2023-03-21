@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MVC_Dropdowns.Models;
+using MVC_Controls.Models;
 using System.Diagnostics;
 
-namespace MVC_Dropdowns.Controllers
+namespace MVC_Controls.Controllers
 {
     public class HomeController : Controller
     {

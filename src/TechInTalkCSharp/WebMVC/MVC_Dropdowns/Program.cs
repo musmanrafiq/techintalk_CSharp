@@ -1,4 +1,4 @@
-namespace MVC_Dropdowns
+namespace MVC_Controls
 {
     public class Program
     {
