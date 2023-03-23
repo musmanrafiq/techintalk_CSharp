@@ -1,0 +1,7 @@
+﻿@model CustomModel
+
+@Html.DropDownListFor(x=>x.SelectedCountry, 
+    Model.Countries.Select(x=> new SelectListItem {
+        Text = x.Name, Value = x.Id+""
+    }), "Please select a country", new { @class="abc", @id="countryList",
+        @style="width:100%; background:red;"})

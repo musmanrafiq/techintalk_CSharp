@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using MVC_Controls.Models;
 
 namespace MVC_Controls.Controllers
 {
@@ -28,5 +29,23 @@ namespace MVC_Controls.Controllers
             ViewData["ListOfCountries"] = list;
             return View();
         }
+
+        public IActionResult ControlerToViewWithModel()
+        {
+            var customModel = new CustomModel
+            {
+                Countries = new List<CountryModel>
+                {
+                    new CountryModel { Name = "Pakistan", Id=1},
+                    new CountryModel { Name = "United Kingdom", Id=2},
+                    new CountryModel { Name= "USA", Id =3}
+                },
+                SelectedCountry = 2
+                ,
+            };
+
+            return View(customModel);
+        }
+
     }
 }
