@@ -1,0 +1,39 @@
+﻿@model CustomModel
+
+@if(Model.Countries.Any())
+{
+
+    @Html.DropDownListFor(x => x.SelectedCountry,
+
+        Model.Countries.Select(x => new SelectListItem
+                    {
+                        Text = x.Name,
+                        Value = x.Id + ""
+                    }), "Please select a country", new
+        {
+            @id = "countryList",
+        });
+}
+
+@if (Model.Cities.Any())
+{
+    @Html.DropDownListFor(x => x.SelectedCity,
+
+        Model.Cities.Select(x => new SelectListItem
+                    {
+                        Text = x.Name,
+                        Value = x.Id + ""
+                    }), "Please select a city", new
+        {
+            @id = "cityList",
+        });
+}
+
+@section Scripts {
+    <script type="text/javascript">
+        $('#countryList').change(function(selectedCountryObj){
+            var value = selectedCountryObj.target.value;
+            document.location.href = `https://localhost:7142/Dropdowns/CascadingDropdown?countryId=${value}`
+        })
+    </script>
+}

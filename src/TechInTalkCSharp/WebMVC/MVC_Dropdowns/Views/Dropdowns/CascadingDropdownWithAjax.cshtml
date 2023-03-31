@@ -1,0 +1,36 @@
+﻿@model CustomModel
+
+@if (Model.Countries.Any())
+{
+    @Html.DropDownListFor(x => x.SelectedCountry,
+
+        Model.Countries.Select(x => new SelectListItem
+                    {
+                        Text = x.Name,
+                        Value = x.Id + ""
+                    }), "Please select a country", new
+        {
+            @id = "countryList",
+        })
+    ;
+}
+
+<select id="cities" hidden></select>
+
+@section Scripts {
+    <script type="text/javascript">
+        $('#countryList').change(function (selectedCountryObj) {
+            var value = selectedCountryObj.target.value;
+            console.log(value);
+
+            $.get(`https://localhost:7142/dropdowns/Cities?countryId=${value}`, 
+            function(data, status, xhr){
+                $('#cities').empty();
+                data.forEach((city)=>{
+                    $('#cities').append(`<option>${city.name}</option>`)
+                });
+                    $('#cities')[0].hidden = false;
+            });
+        })
+    </script>
+}

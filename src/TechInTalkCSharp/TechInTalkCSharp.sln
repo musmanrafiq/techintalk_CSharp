@@ -129,7 +129,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conversions", "General\Conv
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TypesConversions", "TypesConversions", "{CA0273A4-427D-47AC-A552-DC20508CA5CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_Controls", "WebMVC\MVC_Dropdowns\MVC_Controls.csproj", "{75ED8ECA-428F-4ABB-BBB8-BD943D042778}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC_Controls", "WebMVC\MVC_Dropdowns\MVC_Controls.csproj", "{75ED8ECA-428F-4ABB-BBB8-BD943D042778}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CtrlCPressToCancel", "Console\CtrlCPressToCancel\CtrlCPressToCancel.csproj", "{84EFF578-B6AE-4DB5-8717-AF827C7CB052}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -269,6 +271,10 @@ Global
 		{75ED8ECA-428F-4ABB-BBB8-BD943D042778}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75ED8ECA-428F-4ABB-BBB8-BD943D042778}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75ED8ECA-428F-4ABB-BBB8-BD943D042778}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84EFF578-B6AE-4DB5-8717-AF827C7CB052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84EFF578-B6AE-4DB5-8717-AF827C7CB052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84EFF578-B6AE-4DB5-8717-AF827C7CB052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84EFF578-B6AE-4DB5-8717-AF827C7CB052}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -332,6 +338,7 @@ Global
 		{F6DDE1FD-0DA1-42F6-BF38-3DB87290D644} = {CA0273A4-427D-47AC-A552-DC20508CA5CD}
 		{CA0273A4-427D-47AC-A552-DC20508CA5CD} = {E435A1D2-6499-4A0C-BC97-1E64B24017A8}
 		{75ED8ECA-428F-4ABB-BBB8-BD943D042778} = {14E30576-6758-4C8D-B3EA-32484438FE4B}
+		{84EFF578-B6AE-4DB5-8717-AF827C7CB052} = {94856150-255D-43F7-A1FC-F6E3ED5FEE45}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9239E59-720F-4EB7-AB8E-A5A1D277D0AB}
