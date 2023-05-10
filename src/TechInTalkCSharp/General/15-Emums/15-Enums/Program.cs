@@ -19,11 +19,10 @@ namespace _15_Enums
         }
         static void Main(string[] args)
         {
-            foreach(var tempValue in Enum.GetValues(typeof(WeekDays)))
+            foreach (var tempValue in Enum.GetValues(typeof(WeekDays)))
             {
                 Console.WriteLine($"Today is {(int)tempValue}");
             }
-            
         }
     }
 }
