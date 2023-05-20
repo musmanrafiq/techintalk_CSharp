@@ -4,11 +4,16 @@
     {
         static void Main(string[] args)
         {
-            // Q: Swap two values without using third variable
+            // Q1: Swap two values without using third variable
             // A: 
             // Swap();
 
-            
+
+            string input = "_Hi, I am a programmer! .?";
+            var chars =
+                new char[] { '_', '?', '.', ' ' };
+            input = input.Trim(chars);
+            Console.WriteLine(input);
         }
 
         static void Swap()
