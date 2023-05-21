@@ -14,6 +14,16 @@
             password = "";
        
         }
+
+        public void MethodWithSwitch(int number)
+        {
+            var value = number switch
+            {
+                1 => "This is first value",
+                _ => "This is not first value"
+
+            };
+        }
     }
 
     public record User (string UserName, string Password);
