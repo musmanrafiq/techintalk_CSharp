@@ -145,7 +145,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IQ_Console_Project", "Inter
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{E6BBFC2A-8C0E-462A-AF4D-3CBDA10D5BCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp.Quartz", "Libraries\ConsoleApp.Quartz\ConsoleApp.Quartz.csproj", "{2EFFAA35-AE9B-403C-A91B-4C6F2F14C709}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp.Quartz", "Libraries\ConsoleApp.Quartz\ConsoleApp.Quartz.csproj", "{2EFFAA35-AE9B-403C-A91B-4C6F2F14C709}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DatabaseAccess", "DatabaseAccess", "{188C4AD7-4875-4806-8A85-3CA1830C34EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DapperOrm", "DapperOrm", "{A4BA42AF-73F4-4C4A-8920-86DC29DAEF17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper.ConsoleApp", "DatabaseAccess\DapperORM\Dapper.ConsoleApp\Dapper.ConsoleApp.csproj", "{5F051432-3259-452C-B39D-936504662525}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -305,6 +311,10 @@ Global
 		{2EFFAA35-AE9B-403C-A91B-4C6F2F14C709}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EFFAA35-AE9B-403C-A91B-4C6F2F14C709}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EFFAA35-AE9B-403C-A91B-4C6F2F14C709}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F051432-3259-452C-B39D-936504662525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F051432-3259-452C-B39D-936504662525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F051432-3259-452C-B39D-936504662525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F051432-3259-452C-B39D-936504662525}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -374,6 +384,8 @@ Global
 		{18EDE610-E443-4C5D-A95D-0B305380F2CA} = {9F12320F-748E-4B37-85C7-058957AEBE3D}
 		{D7B02C7F-C879-4541-8556-986F5D8EE99E} = {97E1A582-DD73-404E-9A2B-CA2BC16D1C06}
 		{2EFFAA35-AE9B-403C-A91B-4C6F2F14C709} = {E6BBFC2A-8C0E-462A-AF4D-3CBDA10D5BCC}
+		{A4BA42AF-73F4-4C4A-8920-86DC29DAEF17} = {188C4AD7-4875-4806-8A85-3CA1830C34EB}
+		{5F051432-3259-452C-B39D-936504662525} = {A4BA42AF-73F4-4C4A-8920-86DC29DAEF17}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9239E59-720F-4EB7-AB8E-A5A1D277D0AB}
