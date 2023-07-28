@@ -1,0 +1,33 @@
+﻿GET https://localhost:7163/
+
+###
+
+GET https://localhost:7163/SayHi?userName="Usman"
+
+###
+
+GET https://localhost:7163/Users?Id=1&Name=Usman
+
+###
+
+GET https://localhost:7163/Users/2
+
+###
+
+GET https://localhost:7163/Users/Get?Id=2&Name=Salman
+
+###
+GET https://localhost:7163/Users/GetByName/man
+
+###
+
+
+###
+POST https://localhost:7163/Users
+Content-Type: application/json
+
+{
+  "Id": 10,
+  "Name": "Post Test"
+}
+
