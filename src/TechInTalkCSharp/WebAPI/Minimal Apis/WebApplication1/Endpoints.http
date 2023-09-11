@@ -6,7 +6,7 @@ GET https://localhost:7163/SayHi?userName="Usman"
 
 ###
 
-GET https://localhost:7163/Users?Id=1&Name=Usman
+GET https://localhost:7163/Users
 
 ###
 
@@ -14,7 +14,7 @@ GET https://localhost:7163/Users/2
 
 ###
 
-GET https://localhost:7163/Users/Get?Id=2&Name=Salman
+GET https://localhost:7163/Users/Get?Id=3&Name=C
 
 ###
 GET https://localhost:7163/Users/GetByName/man
@@ -31,3 +31,41 @@ Content-Type: application/json
   "Name": "Post Test"
 }
 
+###
+POST https://localhost:7163/Users?user=usman
+
+###
+POST https://localhost:7163/Users/usman
+
+###
+POST https://localhost:7163/Users/Header
+test: jghiugi7ukgiunkhiu
+
+###
+PUT https://localhost:7163/Users/10
+Content-Type: application/json
+
+{
+  "Id": 10,
+  "Name": "Post Test"
+}
+
+###
+Delete https://localhost:7163/Users/1
+
+###
+
+
+GET https://localhost:7163/Filters/usmanss
+test: usman
+
+###
+
+POST https://localhost:7163/Filters
+test: usman
+Content-Type: application/json
+
+{
+  "Id": 10,
+  "Name": "usman"
+}

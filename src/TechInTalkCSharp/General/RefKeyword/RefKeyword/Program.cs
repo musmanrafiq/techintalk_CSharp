@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        
+
         static void Main(string[] args)
         {
             Console.WriteLine(args[0]);
@@ -26,7 +26,7 @@
             Console.WriteLine(salary);
             return salary;
         }
-        public static void ApplyTax( Person person)
+        public static void ApplyTax(Person person)
         {
             person.Salary = person.Salary - (100);
             Console.WriteLine(person.Salary);

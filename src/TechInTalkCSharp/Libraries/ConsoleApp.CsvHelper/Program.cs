@@ -1,4 +1,5 @@
-﻿using CsvHelper.Configuration;
+﻿using CsvHelper;
+using System.Globalization;
 
 namespace ConsoleApp.CsvHelper
 {
@@ -7,25 +8,21 @@ namespace ConsoleApp.CsvHelper
         static void Main(string[] args)
         {
             string pathToCsvFile = @"TestFiles\users.csv";
-            var csvWrapper = new CsvWrapper();
-            var list = csvWrapper.ReadWithMap<Foo, FooMap>(pathToCsvFile);
+            using var reader = new StreamReader(pathToCsvFile);
+            using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+            var list = csv.GetRecords<UserModel>();
+
             foreach (var item in list)
             {
-                Console.WriteLine(item.Username);
+                Console.WriteLine($"Hi {item.Username} , your identifier is {item.Identifier}");
             }
+
         }
 
-        public class Foo
+        public class UserModel
         {
             public string Username { get; set; }
             public int Identifier { get; set; }
-        }
-
-        public sealed class FooMap : ClassMap<Foo> {
-            public FooMap() {
-                Map(m => m.Username);
-                Map(m => m.Identifier).Name("Identifier User");
-            }
         }
 
     }

@@ -8,14 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="TestFiles\people.csv" />
     <None Remove="TestFiles\users.csv" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="TestFiles\people.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
     <EmbeddedResource Include="TestFiles\users.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>

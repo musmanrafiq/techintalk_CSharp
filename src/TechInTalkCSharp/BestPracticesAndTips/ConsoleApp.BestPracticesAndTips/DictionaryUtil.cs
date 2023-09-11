@@ -1,7 +1,11 @@
-﻿using System.Reflection.Metadata;
-
-namespace ConsoleApp.BestPracticesAndTips
+﻿namespace ConsoleApp.BestPracticesAndTips
 {
+
+    /*
+     DictionaryUtil dictionaryUtil= new DictionaryUtil();
+            dictionaryUtil.KeyExistsWithIgnoreCase();
+            dictionaryUtil.FindAndGet();
+    */
     public class DictionaryUtil
     {
         public void KeyExistsWithIgnoreCase()
@@ -12,7 +16,7 @@ namespace ConsoleApp.BestPracticesAndTips
                 { "bar", 2 }
             };
 
-            var exists = dictionary.ContainsKey("FOO"); 
+            var exists = dictionary.ContainsKey("FOO");
             Console.WriteLine(exists);
         }
 
