@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.FileProviders;
 using WebApplication1.Middlewares;
 using WebApplication1.Records;
 
@@ -35,7 +36,6 @@ namespace WebApplication1
             {
 
                 var forecast = "Welcome to the world of minimal APIs in dot net 7";
-                int a = int.Parse("a");
                 return TypedResults.Ok(forecast);
 
             });
@@ -195,6 +195,14 @@ namespace WebApplication1
             // ----------------- End Filters --------------//
 
             app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
+
+            // enable static content in minimal apis
+            app.UseFileServer(new FileServerOptions
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),
+                "StaticContent"))
+            });
+
             #region starting the api
             // rumming the application
             app.Run();
