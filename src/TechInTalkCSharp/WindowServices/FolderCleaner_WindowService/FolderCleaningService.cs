@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Hosting;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
 namespace FolderCleaner_WindowService
@@ -6,10 +7,14 @@ namespace FolderCleaner_WindowService
     public sealed class FolderCleaningService : BackgroundService
     {
         private readonly ILogger<FolderCleaningService> _logger;
+        private readonly IConfiguration _configuration;
 
         public FolderCleaningService(
-            ILogger<FolderCleaningService> logger) =>
-            (_logger) = (logger);
+            ILogger<FolderCleaningService> logger, IConfiguration configuration)
+        {
+            _logger = logger;
+            _configuration = configuration;
+        }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
@@ -17,6 +22,7 @@ namespace FolderCleaner_WindowService
             {
                 while (!stoppingToken.IsCancellationRequested)
                 {
+                    var path = _configuration.GetValue("FolderPath", string.Empty);
                     _logger.LogWarning($"Warning {DateTime.Now}");
                     _logger.LogDebug($"Debug {DateTime.Now}");
                     _logger.LogTrace($"Trace {DateTime.Now}");
@@ -27,7 +33,7 @@ namespace FolderCleaner_WindowService
                     _logger.LogInformation($"Deletion started at {DateTime.Now}");
 
 
-                    DirectoryInfo di = new DirectoryInfo("F:\\Development\\temp\\windowservice");
+                    DirectoryInfo di = new DirectoryInfo(path);
 
                     foreach (FileInfo file in di.GetFiles())
                     {
