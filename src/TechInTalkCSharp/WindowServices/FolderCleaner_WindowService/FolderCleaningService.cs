@@ -22,7 +22,8 @@ namespace FolderCleaner_WindowService
             {
                 while (!stoppingToken.IsCancellationRequested)
                 {
-                    var path = _configuration.GetValue("FolderPath", string.Empty);
+                    var folderPath = _configuration.GetValue<string>("FolderPath");
+                    ArgumentException.ThrowIfNullOrEmpty(folderPath, nameof(folderPath));
                     _logger.LogWarning($"Warning {DateTime.Now}");
                     _logger.LogDebug($"Debug {DateTime.Now}");
                     _logger.LogTrace($"Trace {DateTime.Now}");
@@ -33,7 +34,7 @@ namespace FolderCleaner_WindowService
                     _logger.LogInformation($"Deletion started at {DateTime.Now}");
 
 
-                    DirectoryInfo di = new DirectoryInfo(path);
+                    DirectoryInfo di = new DirectoryInfo(folderPath);
 
                     foreach (FileInfo file in di.GetFiles())
                     {
