@@ -1,4 +1,4 @@
-﻿using FolderCleaner_WindowService;
+﻿using FolderCleaningService;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging.Configuration;
@@ -14,14 +14,12 @@ public class Program
             options.ServiceName = "Folder Cleaning Service";
         });
 
-        LoggerProviderOptions.RegisterProviderOptions<
-            EventLogSettings, EventLogLoggerProvider>(builder.Services);
+        LoggerProviderOptions.RegisterProviderOptions<EventLogSettings, EventLogLoggerProvider>(builder.Services);
 
-        builder.Services.AddHostedService<FolderCleaningService>();
+        builder.Services.AddHostedService<FolderClearningService>();
 
         IHost host = builder.Build();
         host.Run();
-
 
     }
 }
