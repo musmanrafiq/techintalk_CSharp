@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Data;
+using WebApi.Models;
 
 namespace WebApi.Controllers
 {
@@ -21,10 +22,16 @@ namespace WebApi.Controllers
         [HttpGet]
         public IEnumerable<object> Get()
         {
-            _schoolDbContext.Add(new UserEntity { Name = "Usman" });
-            _schoolDbContext.SaveChanges();
-
             return _schoolDbContext.Users.ToList();
+        }
+
+        [HttpPost]
+        public IActionResult Post([FromBody] UserModel model)
+        {
+            var userEntity = new UserEntity { Name = model.Name };
+            _schoolDbContext.Add(userEntity);
+            _schoolDbContext.SaveChanges();
+            return Created();
         }
     }
 }
