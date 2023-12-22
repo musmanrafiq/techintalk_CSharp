@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using WebApi.Data;
 
 namespace WebApi.Controllers
 {
@@ -9,20 +10,21 @@ namespace WebApi.Controllers
 
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly SchoolDbContext _schoolDbContext;
+
+        public HomeController(ILogger<HomeController> logger, SchoolDbContext schoolDbContext)
         {
             _logger = logger;
+            _schoolDbContext = schoolDbContext;
         }
 
         [HttpGet]
         public IEnumerable<object> Get()
         {
-            return Enumerable.Range(1, 5).Select(index => new
-            {
-                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                TemperatureC = Random.Shared.Next(-20, 55)
-            })
-            .ToArray();
+            _schoolDbContext.Add(new UserEntity { Name = "Usman" });
+            _schoolDbContext.SaveChanges();
+
+            return _schoolDbContext.Users.ToList();
         }
     }
 }
