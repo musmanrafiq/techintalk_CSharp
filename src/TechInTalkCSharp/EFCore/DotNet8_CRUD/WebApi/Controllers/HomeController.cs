@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Data;
+using WebApi.Models;
 
 namespace WebApi.Controllers
 {
@@ -25,6 +26,15 @@ namespace WebApi.Controllers
             _schoolDbContext.SaveChanges();
 
             return _schoolDbContext.Users.ToList();
+        }
+
+        [HttpPost]
+        public IActionResult Post([FromBody] UserModel model)
+        {
+            var newUser = new UserEntity { Name = model.Name };
+            _schoolDbContext.Add(newUser);
+            _schoolDbContext.SaveChanges();
+            return Created();
         }
     }
 }
