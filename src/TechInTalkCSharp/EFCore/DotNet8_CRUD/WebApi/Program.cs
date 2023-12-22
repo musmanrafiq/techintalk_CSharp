@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using WebApi.Data;
+
 namespace WebApi
 {
     public class Program
@@ -7,6 +10,13 @@ namespace WebApi
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+
+            // configuration of dbcontext use sql server
+            builder.Services.AddDbContext<SchoolDbContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("SchoolDatabase"));
+
+            });
 
             builder.Services.AddControllers();
 
