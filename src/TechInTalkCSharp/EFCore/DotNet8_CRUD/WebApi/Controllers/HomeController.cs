@@ -43,5 +43,14 @@ namespace WebApi.Controllers
 
             return Ok();
         }
+
+        [HttpDelete]
+        public IActionResult Delete([FromBody] int userId)
+        {
+            // executing delete for that user
+            _schoolDbContext.Users.Where(x => x.Id == userId).ExecuteDelete();
+
+            return Ok();
+        }
     }
 }
