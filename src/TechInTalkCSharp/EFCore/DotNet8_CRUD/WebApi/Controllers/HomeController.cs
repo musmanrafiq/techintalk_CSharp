@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using WebApi.Data;
 using WebApi.Models;
 
@@ -32,6 +33,15 @@ namespace WebApi.Controllers
             _schoolDbContext.Add(userEntity);
             _schoolDbContext.SaveChanges();
             return Created();
+        }
+
+        [HttpPut]
+        public IActionResult Put([FromBody] UserModel model)
+        {
+            // executing update for user
+            _schoolDbContext.Users.Where(x => x.Id == model.Id).ExecuteUpdate(x => x.SetProperty(u => u.Name, model.Name));
+
+            return Ok();
         }
     }
 }

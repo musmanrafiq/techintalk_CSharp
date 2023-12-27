@@ -12,3 +12,12 @@ Content-Type: application/json
   "Name": "UsmanCode 02"
 }
 ###
+
+PUT {{WebApi_HostAddress}}/home/
+Content-Type: application/json
+
+{
+  "Id": 22,
+  "Name": "UsmanCode 22"
+}
+###
