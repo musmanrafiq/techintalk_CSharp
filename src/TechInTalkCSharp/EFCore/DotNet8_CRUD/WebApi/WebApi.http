@@ -17,7 +17,14 @@ PUT {{WebApi_HostAddress}}/home/
 Content-Type: application/json
 
 {
-  "Id": 22,
-  "Name": "UsmanCode 22"
+  "Id": 24,
+  "Name": "UsmanCode 24"
 }
 ###
+
+DELETE {{WebApi_HostAddress}}/home/
+Content-Type: application/json
+
+
+ 24
+

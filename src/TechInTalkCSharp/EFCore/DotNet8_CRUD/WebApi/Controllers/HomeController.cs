@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using WebApi.Data;
 using WebApi.Models;
+using WebApi.Services;
 
 namespace WebApi.Controllers
 {
@@ -11,36 +11,43 @@ namespace WebApi.Controllers
     {
 
         private readonly ILogger<HomeController> _logger;
+        private readonly IUserService _userService;
 
-        private readonly SchoolDbContext _schoolDbContext;
-
-        public HomeController(ILogger<HomeController> logger, SchoolDbContext schoolDbContext)
+        public HomeController(ILogger<HomeController> logger, IUserService userService)
         {
             _logger = logger;
-            _schoolDbContext = schoolDbContext;
+            _userService = userService;
         }
 
         [HttpGet]
-        public IEnumerable<object> Get()
+        public IActionResult Get()
         {
-            return _schoolDbContext.Users.ToList();
+            var results = _userService.GetUsers();
+            return Ok(results);
         }
 
         [HttpPost]
         public IActionResult Post([FromBody] UserModel model)
         {
             var userEntity = new UserEntity { Name = model.Name };
-            _schoolDbContext.Add(userEntity);
-            _schoolDbContext.SaveChanges();
+            var hasCreated = _userService.CreateUser(userEntity);
+            if (!hasCreated)
+            {
+                return Ok("Unable to create a user");
+            }
             return Created();
         }
 
         [HttpPut]
         public IActionResult Put([FromBody] UserModel model)
         {
+            var userEntity = new UserEntity { Name = model.Name, Id = model.Id };
             // executing update for user
-            _schoolDbContext.Users.Where(x => x.Id == model.Id).ExecuteUpdate(x => x.SetProperty(u => u.Name, model.Name));
-
+            var hasUpdated = _userService.UpdateUser(userEntity);
+            if (!hasUpdated)
+            {
+                return Ok("Unable to update the user");
+            }
             return Ok();
         }
 
@@ -48,8 +55,11 @@ namespace WebApi.Controllers
         public IActionResult Delete([FromBody] int userId)
         {
             // executing delete for that user
-            _schoolDbContext.Users.Where(x => x.Id == userId).ExecuteDelete();
-
+            var hasDeleted = _userService.DeleteUser(userId);
+            if (!hasDeleted)
+            {
+                return Ok("Unable to delete the user");
+            }
             return Ok();
         }
     }
