@@ -23,7 +23,8 @@ namespace WebApi.Controllers
         public IActionResult Get()
         {
             var results = _userService.GetUsers();
-            return Ok(results);
+            var response = new { data = results, success = true, total = results.Count() };
+            return Ok(response);
         }
 
         [HttpPost]
