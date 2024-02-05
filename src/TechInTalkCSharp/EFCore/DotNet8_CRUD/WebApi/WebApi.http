@@ -1,15 +1,18 @@
 @WebApi_HostAddress = https://localhost:7275/api
 
-GET {{WebApi_HostAddress}}/home/
+GET {{WebApi_HostAddress}}/Users/
 Accept: application/json
 
 ###
 
-POST {{WebApi_HostAddress}}/home/
+POST {{WebApi_HostAddress}}/Users/
 Content-Type: application/json
 
 {
-  "Name": "UsmanCode 02"
+  "Name": "UsmanCode 02",
+  "UserAdressModel" : {
+  "AdressLine1": "abc"
+  }
 }
 ###
 

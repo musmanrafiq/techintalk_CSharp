@@ -13,7 +13,7 @@ namespace WebApi.Services
 
         public IEnumerable<UserEntity> GetUsers()
         {
-            var results = _schoolDbContext.Users.ToList();
+            var results = _schoolDbContext.Users.Include("UserAdressEntity").ToList();
             return results;
         }
 
