@@ -48,7 +48,7 @@ namespace WebApi.Controllers.Api
             {
                 return Ok("Unable to create a user");
             }
-            return Created();
+            return StatusCode(StatusCodes.Status201Created);
         }
 
         [HttpPut]
