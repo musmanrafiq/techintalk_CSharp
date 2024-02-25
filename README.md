@@ -48,5 +48,19 @@ All the learnings related to c#.
     </td>
   </tr>
 
+  <tr>
+    <td>
+      <a href="https://www.youtube.com/watch?v=8yYtHIjZw84" target="_blank">
+        <span>Wrapping up CRUD, relationships are coming up next, Asp.net EntityFramework 8.0 - Part 5</span>
+        <img src="https://img.youtube.com/vi/8yYtHIjZw84/0.jpg" />
+      </a>
+    </td>
+    <td>
+       <a href="https://www.youtube.com/watch?v=TDXTaCP4LEQ" target="_blank">
+        <span>Asp.net EntityFramework 8.0, One to One relationships - Part 6</span>
+        <img src="https://img.youtube.com/vi/TDXTaCP4LEQ/0.jpg" />
+      </a>
+    </td>
+  </tr>
   
  </table>
