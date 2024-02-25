@@ -11,7 +11,12 @@ All the learnings related to c#.
         <img src="https://img.youtube.com/vi/NOyr4MYPaOs/0.jpg" />
       </a>
     </td>
-    <td><img src="https://img.youtube.com/vi/SUNGmFrpR6Y/0.jpg" ></td>
+    <td>
+      <a href="https://www.youtube.com/watch?v=PajTCSSXeRo" target="_blank">
+        <span>Asp.net 8.0 authentication, remember me, persist cookie with expiry date</span>
+        <img src="https://img.youtube.com/vi/PajTCSSXeRo/0.jpg" />
+      </a>
+    </td>
   </tr>
  </table>
 
