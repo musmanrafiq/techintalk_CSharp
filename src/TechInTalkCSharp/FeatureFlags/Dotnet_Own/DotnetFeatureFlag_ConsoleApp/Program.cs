@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using DotnetFeatureFlag_ConsoleApp.Options;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DotnetFeatureFlag_ConsoleApp
@@ -16,11 +17,19 @@ namespace DotnetFeatureFlag_ConsoleApp
             var testKey = config["TestKey"];
             Console.WriteLine(testKey);
 
-            //
-            var serviceProvider = new ServiceCollection()
+            // Second video
+            var servicesCollection = new ServiceCollection()
                 .AddSingleton<TestClass>()
-                .AddSingleton<IConfiguration>(config)
-                .BuildServiceProvider();
+                .AddSingleton<TestClassTwo>()
+                .AddSingleton<IConfiguration>(config);
+
+            // Third video
+            // Mappting Test config from config file to the TestOption class
+            // to be available in DI as IOptions
+            servicesCollection.Configure<TestOption>(config.GetSection("Test"));
+
+            // creating the provider
+            var serviceProvider = servicesCollection.BuildServiceProvider();
 
             // Second Video
             var testValueFromObj = config["Test:Key"];
@@ -29,8 +38,11 @@ namespace DotnetFeatureFlag_ConsoleApp
             Console.WriteLine(testValueFromObjUsingGetSection.Value);
 
             TestClass testClassObj = serviceProvider.GetService<TestClass>();
+            TestClassTwo testClassTwoObj = serviceProvider.GetService<TestClassTwo>();
+
 
             testClassObj?.PrintConfig();
+            testClassTwoObj.Read();
 
         }
     }
