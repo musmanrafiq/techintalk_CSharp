@@ -1,4 +1,5 @@
 ﻿using DotnetFeatureFlag_ConsoleApp.Options;
+using DotnetFeatureFlag_ConsoleApp.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -21,6 +22,8 @@ namespace DotnetFeatureFlag_ConsoleApp
             var servicesCollection = new ServiceCollection()
                 .AddSingleton<TestClass>()
                 .AddSingleton<TestClassTwo>()
+                .AddScoped<ServiceA>()
+                .AddSingleton<ServiceB>()
                 .AddSingleton<IConfiguration>(config);
 
             // Third video
@@ -37,12 +40,33 @@ namespace DotnetFeatureFlag_ConsoleApp
             Console.WriteLine(testValueFromObj);
             Console.WriteLine(testValueFromObjUsingGetSection.Value);
 
-            TestClass testClassObj = serviceProvider.GetService<TestClass>();
-            TestClassTwo testClassTwoObj = serviceProvider.GetService<TestClassTwo>();
+
+            while (true)
+            {
+                Thread.Sleep(1000);
+
+                using var scope = serviceProvider.CreateScope();
+                TestClass testClassObj = scope.ServiceProvider.GetService<TestClass>();
+                TestClassTwo testClassTwoObj = scope.ServiceProvider.GetService<TestClassTwo>();
+                ServiceA serviceA = scope.ServiceProvider.GetService<ServiceA>();
+                ServiceB serviceB = scope.ServiceProvider.GetService<ServiceB>();
+
+                //testClassObj?.PrintConfig();
+                //testClassTwoObj.Read();
+
+                //IOptionsSnapshot
+                // when the service type is scoped or transiant
+                //serviceA.Read();
+
+                //IOptionsMonitor
+                // when the service type is singelton
+                serviceB.Read();
+
+            }
 
 
-            testClassObj?.PrintConfig();
-            testClassTwoObj.Read();
+
+
 
         }
     }
