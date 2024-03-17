@@ -5,6 +5,11 @@ Accept: application/json
 
 ###
 
+GET {{WebApi_HostAddress}}/Users/CreateUserWithDevices
+Accept: application/json
+
+###
+
 POST {{WebApi_HostAddress}}/Users/
 Content-Type: application/json
 
@@ -12,7 +17,12 @@ Content-Type: application/json
   "Name": "UsmanCode 02",
   "UserAdressModel" : {
   "AdressLine1": "abc"
+  },
+  "Devices": [
+    {
+    "Name": "RealMe C67"
   }
+  ]
 }
 ###
 

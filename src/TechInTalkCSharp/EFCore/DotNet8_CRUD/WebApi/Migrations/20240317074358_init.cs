@@ -5,11 +5,24 @@
 namespace WebApi.Migrations
 {
     /// <inheritdoc />
-    public partial class user_address : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "UserAdressEntity",
                 columns: table => new
@@ -43,6 +56,9 @@ namespace WebApi.Migrations
         {
             migrationBuilder.DropTable(
                 name: "UserAdressEntity");
+
+            migrationBuilder.DropTable(
+                name: "Users");
         }
     }
 }

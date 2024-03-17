@@ -7,6 +7,8 @@ namespace WebApi.Data
         // individual tables
         public DbSet<UserEntity> Users { get; set; }
 
+
+
         public SchoolDbContext(DbContextOptions options) : base(options)
         {
 

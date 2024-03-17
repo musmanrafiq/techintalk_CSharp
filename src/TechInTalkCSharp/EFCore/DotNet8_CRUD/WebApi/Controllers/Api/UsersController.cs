@@ -43,6 +43,7 @@ namespace WebApi.Controllers.Api
                     AddressLine2 = model.UserAdressModel.AddressLine2
                 };
             }
+
             var hasCreated = _userService.CreateUser(userEntity);
             if (!hasCreated)
             {
@@ -74,6 +75,33 @@ namespace WebApi.Controllers.Api
                 return Ok("Unable to delete the user");
             }
             return Ok();
+        }
+
+        [HttpGet("CreateUserWithDevices")]
+        public IActionResult CreateUserWithDevices()
+        {
+            var newUser = new UserEntity
+            {
+                Name = "TestUserWithADevice",
+                Devices = new List<Device>
+                {
+                    new Device
+                    {
+                        Name = "Device1"
+                    },
+                    new Device
+                    {
+                        Name = "Device2"
+                    }
+                }
+            };
+
+            var hasCreated = _userService.CreateUser(newUser);
+            if (!hasCreated)
+            {
+                return Ok("Unable to create a user");
+            }
+            return Ok("Working");
         }
     }
 }

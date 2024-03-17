@@ -13,13 +13,17 @@ namespace WebApi.Services
 
         public IEnumerable<UserEntity> GetUsers()
         {
-            var results = _schoolDbContext.Users.Include("UserAdressEntity").ToList();
+            var results = _schoolDbContext.Users.Include("UserAdressEntity")
+                .Include("Devices")
+                .ToList();
             return results;
         }
 
         public bool CreateUser(UserEntity user)
         {
+
             _schoolDbContext.Add(user);
+
             int resutCount = _schoolDbContext.SaveChanges();
             return resutCount > 0;
         }
