@@ -200,7 +200,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinForms_Controls", "Winfor
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIsConsumtion", "APIsConsumtion", "{A83D59FD-B300-4A18-8019-BF1229A10CB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APICons.ConsoleApp", "APIsConsumption\APICons.ConsoleApp\APICons.ConsoleApp.csproj", "{7CC2160C-C827-4705-8F74-121D3C605B1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APICons.ConsoleApp", "APIsConsumption\APICons.ConsoleApp\APICons.ConsoleApp.csproj", "{7CC2160C-C827-4705-8F74-121D3C605B1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configs.WebApi", "WebAPI\Configs.WebApi\Configs.WebApi.csproj", "{913D88F2-3EFF-4F09-8091-716BEA4ED774}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -412,6 +414,10 @@ Global
 		{7CC2160C-C827-4705-8F74-121D3C605B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CC2160C-C827-4705-8F74-121D3C605B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CC2160C-C827-4705-8F74-121D3C605B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{913D88F2-3EFF-4F09-8091-716BEA4ED774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{913D88F2-3EFF-4F09-8091-716BEA4ED774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{913D88F2-3EFF-4F09-8091-716BEA4ED774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{913D88F2-3EFF-4F09-8091-716BEA4ED774}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -500,6 +506,7 @@ Global
 		{EB11BCF4-79E2-468A-9E05-FD114665C142} = {DA033B1F-19FF-4EAB-AA18-147604722384}
 		{5D96EE18-F3DF-4805-9A23-1BF1A2DFB457} = {22B3354F-3BF1-4922-8D85-51B6F2688D55}
 		{7CC2160C-C827-4705-8F74-121D3C605B1F} = {A83D59FD-B300-4A18-8019-BF1229A10CB2}
+		{913D88F2-3EFF-4F09-8091-716BEA4ED774} = {64B84555-4DD0-4CCE-8632-3F6A4F80448F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9239E59-720F-4EB7-AB8E-A5A1D277D0AB}
