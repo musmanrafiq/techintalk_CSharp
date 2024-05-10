@@ -17,6 +17,7 @@ namespace Configs.WebApi
 
             app.MapGet("/weatherforecast", (HttpContext httpContext, IConfiguration config) =>
             {
+                var userName = config.GetSection("UserList").Get<List<User>>()[0].Name;
 
                 var userSettings = config.GetSection("Users").Get<UserSetting>();
                 return userSettings;
@@ -30,5 +31,9 @@ namespace Configs.WebApi
     {
         public string Name { get; set; }
         public string Password { get; set; }
+    }
+    public record User
+    {
+        public string Name { get; set; }
     }
 }
